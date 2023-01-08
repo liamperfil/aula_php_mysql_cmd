@@ -13,8 +13,8 @@ DEFAULT COLLATE utf8_general_ci;
 
 ```sql
 USE database1;
-```
-<br>
+``` <br>
+
 Criando uma tabela, comando create table seguido do nome da tabela, entre parênteses o nome da coluna seguido do tipo dado e demais constantes, cada coluna será separada por uma vírgula, exemplo:
 ```sql
 CREATE TABLE pessoa(
@@ -27,13 +27,14 @@ Nacionalidade  varchar(20) DEFAULT ‘Brasil’
 
 ```sql
 INSERT INTO tabela1 (coluna1, coluna2) VALUES ('valor1','valor2');
-```
-<br>
+``` <br>
+
 Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para selecionar todos registros.
 ```sql
 SELECT coluna1, coluna2 FROM tabela1;
 ```
 <br>
+
 - UPDATE - updates data in a database	
 - DELETE - deletes data from a database
 - ALTER DATABASE - modifies a database
@@ -44,8 +45,8 @@ SELECT coluna1, coluna2 FROM tabela1;
 - SHOW DATABASES;
 - SHOW TABLES;
 - SHOW CREATE TABLE tabela1;
-- AES_ENCRYPT('dado', 'chave')
-<br>
+- AES_ENCRYPT('dado', 'chave') <br>
+
 ```sql
 INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'valor2');
 ```
