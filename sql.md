@@ -5,6 +5,7 @@
 
 ![Diagrama estrutura de banco de dados](/../../../../liamperfil/img/blob/main/estrutura_db.png)
 
+
 ```sql
 CREATE DATABASE IF NOT EXISTS database1
 DEFAULT CHARACTER SET utf8
@@ -14,8 +15,6 @@ DEFAULT COLLATE utf8_general_ci;
 ```sql
 USE database1;
 ``` 
-
-<br>
 
 Criando uma tabela, comando create table seguido do nome da tabela, entre parênteses o nome da coluna seguido do tipo dado e demais constantes, cada coluna será separada por uma vírgula, exemplo:
 
@@ -32,7 +31,6 @@ Nacionalidade  varchar(20) DEFAULT ‘Brasil’
 INSERT INTO tabela1 (coluna1, coluna2) VALUES ('valor1','valor2');
 ```
 
-<br>
 
 Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para selecionar todos registros.
 
@@ -40,7 +38,6 @@ Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para s
 SELECT coluna1, coluna2 FROM tabela1;
 ``` 
 
-<br>
 
 - UPDATE - updates data in a database	
 - DELETE - deletes data from a database
@@ -52,7 +49,8 @@ SELECT coluna1, coluna2 FROM tabela1;
 - SHOW DATABASES;
 - SHOW TABLES;
 - SHOW CREATE TABLE tabela1;
-- AES_ENCRYPT('dado', 'chave') <br>
+- AES_ENCRYPT('dado', 'chave') 
+
 
 ```sql
 INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'valor2');
@@ -63,7 +61,6 @@ CAST(AES_DECRYPT(senha,'chave') as char)
 SELECT coluna1, CAST(AES_DECRYPT(coluna1,'chave') as char) from tabela1 WHERE colunax='valor1';
 ```
 
-<br>
 
 ### Constantes
 
@@ -72,7 +69,6 @@ SELECT coluna1, CAST(AES_DECRYPT(coluna1,'chave') as char) from tabela1 WHERE co
 - PRIMARY KEY
 - DEFAULT
 
-<br>
 
 ## Programas utilizados
 
