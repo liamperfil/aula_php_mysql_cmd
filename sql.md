@@ -1,7 +1,7 @@
 # AULA SQL
 
-[SQL Keywords Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp "w3schools")
-[SQL Data Types](https://www.w3schools.com/sql/sql_datatypes.asp "w3schools")
+[SQL Keywords Reference](https://www.w3schools.com/sql/sql_ref_keywords.asp "w3schools") <br>
+[SQL Data Types](https://www.w3schools.com/sql/sql_datatypes.asp "w3schools") <br>
 
 ![Diagrama estrutura de banco de dados](/../../../../liamperfil/img/blob/main/estrutura_db.png)
 
@@ -14,7 +14,7 @@ DEFAULT COLLATE utf8_general_ci;
 ```sql
 USE database1;
 ```
-
+<br>
 Criando uma tabela, comando create table seguido do nome da tabela, entre parênteses o nome da coluna seguido do tipo dado e demais constantes, cada coluna será separada por uma vírgula, exemplo:
 ```sql
 CREATE TABLE pessoa(
@@ -28,12 +28,12 @@ Nacionalidade  varchar(20) DEFAULT ‘Brasil’
 ```sql
 INSERT INTO tabela1 (coluna1, coluna2) VALUES ('valor1','valor2');
 ```
-
+<br>
 Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para selecionar todos registros.
 ```sql
 SELECT coluna1, coluna2 FROM tabela1;
 ```
-
+<br>
 - UPDATE - updates data in a database	
 - DELETE - deletes data from a database
 - ALTER DATABASE - modifies a database
@@ -45,7 +45,7 @@ SELECT coluna1, coluna2 FROM tabela1;
 - SHOW TABLES;
 - SHOW CREATE TABLE tabela1;
 - AES_ENCRYPT('dado', 'chave')
-
+<br>
 ```sql
 INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'valor2');
 ```
@@ -54,13 +54,13 @@ INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'v
 CAST(AES_DECRYPT(senha,'chave') as char)
 SELECT coluna1, CAST(AES_DECRYPT(coluna1,'chave') as char) from tabela1 WHERE colunax='valor1';
 ```
-
+<br>
 ### Constantes
 - NOT NULL
 - ENUM(‘X’,’Y’)
 - PRIMARY KEY
 - DEFAULT
-
+<br>
 ## Programas utilizados
 
 ### Wampserver
