@@ -33,6 +33,7 @@ INSERT INTO tabela1 (coluna1, coluna2) VALUES ('valor1','valor2');
 ```
 
 <br>
+
 Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para selecionar todos registros.
 
 ```sql
@@ -40,6 +41,7 @@ SELECT coluna1, coluna2 FROM tabela1;
 ``` 
 
 <br>
+
 - UPDATE - updates data in a database	
 - DELETE - deletes data from a database
 - ALTER DATABASE - modifies a database
@@ -59,14 +61,18 @@ INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'v
 ```sql
 CAST(AES_DECRYPT(senha,'chave') as char)
 SELECT coluna1, CAST(AES_DECRYPT(coluna1,'chave') as char) from tabela1 WHERE colunax='valor1';
-``` <br>
+```
+
+<br>
 
 ### Constantes
 
 - NOT NULL
 - ENUM(‘X’,’Y’)
 - PRIMARY KEY
-- DEFAULT <br>
+- DEFAULT
+
+<br>
 
 ## Programas utilizados
 
