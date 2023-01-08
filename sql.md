@@ -16,6 +16,7 @@ USE database1;
 ``` <br>
 
 Criando uma tabela, comando create table seguido do nome da tabela, entre parênteses o nome da coluna seguido do tipo dado e demais constantes, cada coluna será separada por uma vírgula, exemplo:
+
 ```sql
 CREATE TABLE pessoa(
 CPF int NOT NULL PRIMARY KEY,
@@ -30,10 +31,10 @@ INSERT INTO tabela1 (coluna1, coluna2) VALUES ('valor1','valor2');
 ``` <br>
 
 Diz selecionar os campos de tais colunas da tal tabela, use asterisco (*) para selecionar todos registros.
+
 ```sql
 SELECT coluna1, coluna2 FROM tabela1;
-```
-<br>
+``` <br>
 
 - UPDATE - updates data in a database	
 - DELETE - deletes data from a database
@@ -54,17 +55,19 @@ INSERT INTO tabela1 (coluna1, coluna2) VALUES (AES_ENCRYPT('valor1', 'chave'),'v
 ```sql
 CAST(AES_DECRYPT(senha,'chave') as char)
 SELECT coluna1, CAST(AES_DECRYPT(coluna1,'chave') as char) from tabela1 WHERE colunax='valor1';
-```
-<br>
+``` <br>
+
 ### Constantes
+
 - NOT NULL
 - ENUM(‘X’,’Y’)
 - PRIMARY KEY
-- DEFAULT
-<br>
+- DEFAULT <br>
+
 ## Programas utilizados
 
 ### Wampserver
+
 - WAMP é o acrônimo para Windows, Apache, MySQL e PHP. 
 - É um pacote de softwares. 
 - O WAMP age como um servidor virtual na sua máquina. Qual a diferença entre WAMP, XAMP, LAMP e MAMP? A diferença é para o sistema operacional.
