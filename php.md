@@ -19,6 +19,15 @@ if($conn->connect_errno){
 }
 ```
 
+```php
+$dbname = 'liam';
+$dbuser = 'root';
+$dbpass = '';
+$dbhost = 'localhost';
+
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) or die(header('Location: error_xml.php'));
+```
+
 ## exibindo dados
 
 ### fetch array
