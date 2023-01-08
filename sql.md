@@ -13,7 +13,9 @@ DEFAULT COLLATE utf8_general_ci;
 
 ```sql
 USE database1;
-``` <br>
+``` 
+
+<br>
 
 Criando uma tabela, comando create table seguido do nome da tabela, entre parênteses o nome da coluna seguido do tipo dado e demais constantes, cada coluna será separada por uma vírgula, exemplo:
 
